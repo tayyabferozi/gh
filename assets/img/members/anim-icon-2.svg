@@ -1,0 +1,20 @@
+<svg id="Group_43167" data-name="Group 43167" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="154" height="154" viewBox="0 0 154 154">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_18886" data-name="Rectangle 18886" width="154" height="154" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_43166" data-name="Group 43166" clip-path="url(#clip-path)">
+    <circle id="Ellipse_94" data-name="Ellipse 94" cx="75" cy="75" r="75" transform="translate(2 2)" fill="none" stroke="#00bdc3" stroke-miterlimit="10" stroke-width="4"/>
+    <circle id="Ellipse_95" data-name="Ellipse 95" cx="46.469" cy="46.469" r="46.469" transform="translate(30.531 30.531)" fill="none" stroke="#00bdc3" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path_57235" data-name="Path 57235" d="M99.188,77A22.188,22.188,0,1,1,77,54.813,22.188,22.188,0,0,1,99.188,77Z" fill="none" stroke="#00bdc3" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path_57236" data-name="Path 57236" d="M125.28,98.992a22.167,22.167,0,1,1-22.167-22.167A22.167,22.167,0,0,1,125.28,98.992" fill="#fff"/>
+    <circle id="Ellipse_96" data-name="Ellipse 96" cx="22.167" cy="22.167" r="22.167" transform="translate(80.946 76.825)" fill="none" stroke="#00bdc3" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path_57237" data-name="Path 57237" d="M116.673,89.842,98.7,107.818l-9.143-9.143" fill="none" stroke="#00bdc3" stroke-miterlimit="10" stroke-width="4"/>
+    <line id="Line_5127" data-name="Line 5127" y1="38.124" x2="38.124" transform="translate(77 38.876)" fill="none" stroke="#00bdc3" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path_57238" data-name="Path 57238" d="M115.124,38.876l-10.8,10.8-3.158-10.5,10.8-10.8Z" fill="#fff"/>
+    <path id="Path_57239" data-name="Path 57239" d="M115.124,38.876l-10.8,10.8-3.158-10.5,10.8-10.8Z" fill="none" stroke="#00bdc3" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Path_57240" data-name="Path 57240" d="M114.826,52.834l10.8-10.8-10.5-3.158-10.8,10.8Z" fill="#fff"/>
+    <path id="Path_57241" data-name="Path 57241" d="M114.826,52.834l10.8-10.8-10.5-3.158-10.8,10.8Z" fill="none" stroke="#00bdc3" stroke-miterlimit="10" stroke-width="4"/>
+  </g>
+</svg>
