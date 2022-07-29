@@ -1,16 +1,30 @@
-<svg id="Group_43161" data-name="Group 43161" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="154" height="154" viewBox="0 0 154 154">
-  <defs>
-    <clipPath id="clip-path">
-      <rect id="Rectangle_18883" data-name="Rectangle 18883" width="154" height="154" fill="none"/>
-    </clipPath>
-  </defs>
-  <path id="Path_57222" data-name="Path 57222" d="M63.778,60.911l8.784-.843,4.09-7.217L80.5,60.068l8.3.843-5.916,5.775,1.324,8.06-7.579-3.971-8.06,3.971,1.922-8.06Z" fill="none" stroke="#00bdc3" stroke-linejoin="round" stroke-width="4"/>
-  <g id="Group_43160" data-name="Group 43160">
-    <g id="Group_43159" data-name="Group 43159" clip-path="url(#clip-path)">
-      <path id="Path_57223" data-name="Path 57223" d="M53.757,56.26c-.365-8.942-14.9-11.866-14.9,1.212C38.854,76.752,65.2,81.24,65.2,81.24" fill="none" stroke="#00bdc3" stroke-linejoin="round" stroke-width="4"/>
-      <path id="Path_57224" data-name="Path 57224" d="M98.1,110.891c.12-3.9.12-7.635-5.62-7.906-8.993-.424-15.038-12.305-4.766-20.792,13.075-10.8,13.411-28.811,12.672-39.084H53.62c-.739,10.273-.4,28.282,12.672,39.084,10.272,8.487,4.227,20.368-4.766,20.792-5.74.271-5.74,4.007-5.62,7.906Z" fill="none" stroke="#00bdc3" stroke-linejoin="round" stroke-width="4"/>
-      <path id="Path_57225" data-name="Path 57225" d="M100.243,56.26c.364-8.942,14.9-11.866,14.9,1.212,0,19.28-26.343,23.768-26.343,23.768" fill="none" stroke="#00bdc3" stroke-linejoin="round" stroke-width="4"/>
-      <circle id="Ellipse_89" data-name="Ellipse 89" cx="75" cy="75" r="75" transform="translate(2 2)" fill="none" stroke="#00bdc3" stroke-miterlimit="10" stroke-width="4"/>
-    </g>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Group_43161" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 154 154" style="enable-background:new 0 0 154 154;" xml:space="preserve">
+<style type="text/css">
+	
+		.st0{clip-path:url(#SVGID_00000149363692832590418980000006798624523241793177_);fill:none;stroke:#00BDC3;stroke-width:4;stroke-linejoin:round;}
+	.st1{clip-path:url(#SVGID_00000149363692832590418980000006798624523241793177_);}
+	.st2{fill:none;stroke:#00BDC3;stroke-width:4;stroke-linejoin:round;}
+	.st3{fill:none;stroke:#00BDC3;stroke-width:4;stroke-miterlimit:10;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="154" height="154"/>
+	</defs>
+	<clipPath id="SVGID_00000059992397061580297150000001751625951952373639_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	
+		<path id="Path_57222" style="clip-path:url(#SVGID_00000059992397061580297150000001751625951952373639_);fill:none;stroke:#00BDC3;stroke-width:4;stroke-linejoin:round;" d="
+		M63.8,60.9l8.8-0.8l4.1-7.2l3.8,7.2l8.3,0.8l-5.9,5.8l1.3,8.1l-7.6-4l-8.1,4l1.9-8.1L63.8,60.9z"/>
+	<g id="Group_43159" style="clip-path:url(#SVGID_00000059992397061580297150000001751625951952373639_);">
+		<path id="Path_57223" class="st2" d="M53.8,56.3c-0.4-8.9-14.9-11.9-14.9,1.2c0,19.3,26.3,23.8,26.3,23.8"/>
+		<path id="Path_57224" class="st2" d="M98.1,110.9c0.1-3.9,0.1-7.6-5.6-7.9c-9-0.4-15-12.3-4.8-20.8c13.1-10.8,13.4-28.8,12.7-39.1
+			H53.6c-0.7,10.3-0.4,28.3,12.7,39.1c10.3,8.5,4.2,20.4-4.8,20.8c-5.7,0.3-5.7,4-5.6,7.9H98.1z"/>
+		<path id="Path_57225" class="st2" d="M100.2,56.3c0.4-8.9,14.9-11.9,14.9,1.2c0,19.3-26.3,23.8-26.3,23.8"/>
+	</g>
+</g>
+<circle id="Ellipse_89" class="st3" cx="77" cy="77" r="75"/>
 </svg>

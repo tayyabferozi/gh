@@ -1002,10 +1002,18 @@
                   />
                 </clipPath>
                 <style>
-                  #biceps.animate {
+                  #biceps {
                     stroke-dasharray: 500;
+                  }
+
+                  #biceps.animate {
                     stroke-dashoffset: 0;
-                    animation: dash-1 1s linear forwards;
+                    animation: dash-1 1.5s linear forwards;
+                  }
+
+                  #biceps.unanimate {
+                    stroke-dashoffset: 0;
+                    animation: dash-1 0.5s linear forwards reverse;
                   }
 
                   @keyframes dash-1 {
@@ -1061,11 +1069,185 @@
 
           <!-- <div class="col-md-4 col-10"> -->
           <div class="mob-single">
-            <img
+            <svg
+              id="anim-icon-2"
+              data-name="Group 43167"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="154"
+              height="154"
+              viewBox="0 0 154 154"
+            >
+              <defs>
+                <clipPath id="clip-path">
+                  <rect
+                    id="Rectangle_18886"
+                    data-name="Rectangle 18886"
+                    width="154"
+                    height="154"
+                    fill="none"
+                  />
+                </clipPath>
+
+                <style>
+                  #center-circle {
+                    transform-origin: center;
+                  }
+
+                  #center-circle.animate {
+                    animation: grow 1.5s ease forwards;
+                  }
+
+                  #center-circle.unanimate {
+                    animation: grow 0.75s ease forwards reverse;
+                  }
+
+                  #circle-checkmark {
+                    transform-origin: center;
+                  }
+
+                  #circle-checkmark.animate {
+                    webkit-animation: scale-up-center 1s 0.5s
+                      cubic-bezier(0.39, 0.575, 0.565, 1) both;
+                    animation: scale-up-center 1s 0.5s
+                      cubic-bezier(0.39, 0.575, 0.565, 1) both;
+                  }
+
+                  #circle-checkmark.unanimate {
+                    webkit-animation: scale-up-center 1s 0.5s
+                      cubic-bezier(0.39, 0.575, 0.565, 1) forwards reverse;
+                    animation: scale-up-center 1s 0.5s
+                      cubic-bezier(0.39, 0.575, 0.565, 1) forwards reverse;
+                  }
+
+                  @keyframes grow {
+                    from {
+                      transform: scale(0, 0) translate(45.5px, 30.531px);
+                      opacity: 0;
+                    }
+                    to {
+                      transform: scale(1, 1) translate(30.5px, 30.531px);
+                      opacity: 1;
+                    }
+                  }
+                </style>
+              </defs>
+              <g
+                id="Group_43166"
+                data-name="Group 43166"
+                clip-path="url(#clip-path)"
+              >
+                <circle
+                  id="Ellipse_94"
+                  data-name="Ellipse 94"
+                  cx="75"
+                  cy="75"
+                  r="75"
+                  transform="translate(2 2)"
+                  fill="none"
+                  stroke="#00bdc3"
+                  stroke-miterlimit="10"
+                  stroke-width="4"
+                />
+                <circle
+                  id="center-circle"
+                  data-name="Ellipse 95"
+                  cx="46.469"
+                  cy="46.469"
+                  r="46.469"
+                  transform="translate(30.531 30.531)"
+                  fill="none"
+                  stroke="#00bdc3"
+                  stroke-miterlimit="10"
+                  stroke-width="4"
+                />
+                <path
+                  id="last-circle"
+                  data-name="Path 57235"
+                  d="M99.188,77A22.188,22.188,0,1,1,77,54.813,22.188,22.188,0,0,1,99.188,77Z"
+                  fill="none"
+                  stroke="#00bdc3"
+                  stroke-miterlimit="10"
+                  stroke-width="4"
+                />
+                <g id="circle-checkmark">
+                  <path
+                    id="Path_57236"
+                    data-name="Path 57236"
+                    d="M125.28,98.992a22.167,22.167,0,1,1-22.167-22.167A22.167,22.167,0,0,1,125.28,98.992"
+                    fill="#fff"
+                  />
+                  <circle
+                    id="Ellipse_96"
+                    data-name="Ellipse 96"
+                    cx="22.167"
+                    cy="22.167"
+                    r="22.167"
+                    transform="translate(80.946 76.825)"
+                    fill="none"
+                    stroke="#00bdc3"
+                    stroke-miterlimit="10"
+                    stroke-width="4"
+                  />
+                  <path
+                    id="Path_57237"
+                    data-name="Path 57237"
+                    d="M116.673,89.842,98.7,107.818l-9.143-9.143"
+                    fill="none"
+                    stroke="#00bdc3"
+                    stroke-miterlimit="10"
+                    stroke-width="4"
+                  />
+                </g>
+                <line
+                  id="Line_5127"
+                  data-name="Line 5127"
+                  y1="38.124"
+                  x2="38.124"
+                  transform="translate(77 38.876)"
+                  fill="none"
+                  stroke="#00bdc3"
+                  stroke-miterlimit="10"
+                  stroke-width="4"
+                />
+                <path
+                  id="Path_57238"
+                  data-name="Path 57238"
+                  d="M115.124,38.876l-10.8,10.8-3.158-10.5,10.8-10.8Z"
+                  fill="#fff"
+                />
+                <path
+                  id="Path_57239"
+                  data-name="Path 57239"
+                  d="M115.124,38.876l-10.8,10.8-3.158-10.5,10.8-10.8Z"
+                  fill="none"
+                  stroke="#00bdc3"
+                  stroke-miterlimit="10"
+                  stroke-width="4"
+                />
+                <path
+                  id="Path_57240"
+                  data-name="Path 57240"
+                  d="M114.826,52.834l10.8-10.8-10.5-3.158-10.8,10.8Z"
+                  fill="#fff"
+                />
+                <path
+                  id="Path_57241"
+                  data-name="Path 57241"
+                  d="M114.826,52.834l10.8-10.8-10.5-3.158-10.8,10.8Z"
+                  fill="none"
+                  stroke="#00bdc3"
+                  stroke-miterlimit="10"
+                  stroke-width="4"
+                />
+              </g>
+            </svg>
+
+            <!-- <img
               class="anim-icon-2"
               src="./assets/img/members/anim-icon-2.svg"
               alt=""
-            />
+            /> -->
             <p>Real-time feedback to track your workout effectiveness</p>
           </div>
           <!-- /.mob-single -->
@@ -1074,11 +1256,102 @@
 
           <!-- <div class="col-md-4 col-10"> -->
           <div class="mob-single">
-            <img
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              id="anim-icon-3"
+              data-name="Group 43158"
+              width="154"
+              height="154"
+              viewBox="0 0 154 154"
+            >
+              <defs>
+                <clipPath id="clip-path">
+                  <rect
+                    id="Rectangle_18882"
+                    data-name="Rectangle 18882"
+                    width="154"
+                    height="154"
+                    fill="none"
+                  />
+                </clipPath>
+
+                <style>
+                  #curly-lines {
+                    stroke-dasharray: 500;
+                  }
+
+                  #curly-lines.animate {
+                    stroke-dashoffset: 0;
+                    animation: dash-2 1.5s linear forwards;
+                  }
+                  #curly-lines.unanimate {
+                    stroke-dashoffset: 0;
+                    animation: dash-2 0.75s linear forwards reverse;
+                  }
+
+                  @keyframes dash-2 {
+                    from {
+                      stroke-dashoffset: 500;
+                    }
+
+                    to {
+                      stroke-dashoffset: 0;
+                    }
+                  }
+                </style>
+              </defs>
+              <g
+                id="Group_43157"
+                data-name="Group 43157"
+                clip-path="url(#clip-path)"
+              >
+                <circle
+                  id="Ellipse_88"
+                  data-name="Ellipse 88"
+                  cx="75"
+                  cy="75"
+                  r="75"
+                  transform="translate(2 2)"
+                  fill="none"
+                  stroke="#00bdc3"
+                  stroke-miterlimit="10"
+                  stroke-width="4"
+                />
+                <path
+                  id="Path_57218"
+                  data-name="Path 57218"
+                  d="M49.341,85.871V68.129h3.224l8.4,11.819V68.129h3.719V85.871H61.463l-8.4-11.819V85.871Z"
+                  fill="#00bdc3"
+                />
+                <path
+                  id="Path_57219"
+                  data-name="Path 57219"
+                  d="M67.826,85.871V68.129H80.554v2.893H71.545v4.546h7.989v2.865H71.545v4.573h9.009v2.865Z"
+                  fill="#00bdc3"
+                />
+                <path
+                  id="Path_57221"
+                  data-name="Path 57220"
+                  d="M86.725,85.871,82.593,68.129h3.664l2.672,11.984,2.893-9.67V68.129h3.03l3.417,12.012,2.755-12.012h3.636l-4.105,17.742H97.029l-3.251-11.35-3.5,11.35Z"
+                  fill="#00bdc3"
+                />
+                <path
+                  id="curly-lines"
+                  data-name="Path 57221"
+                  d="M77,38.279l12.527-8.031,6.834,13.219,14.864-.692-.691,14.865,13.218,6.833L115.721,77l8.031,12.528-13.218,6.833.691,14.864-14.864-.691-6.834,13.219L77,115.722l-12.527,8.031-6.834-13.219-14.864.691.691-14.864L30.248,89.528,38.279,77,30.248,64.473,43.466,57.64l-.691-14.865,14.864.692,6.834-13.219Z"
+                  fill="none"
+                  stroke="#00bdc3"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                />
+              </g>
+            </svg>
+            <!-- <img
               class="anim-icon-3"
               src="./assets/img/members/anim-icon-3.svg"
               alt=""
-            />
+            /> -->
             <p>
               Access to new classes and programs led by experts, released every
               month
@@ -1090,11 +1363,132 @@
 
           <!-- <div class="col-md-4 col-10"> -->
           <div class="mob-single">
-            <img
+            <svg
+              version="1.1"
+              id="anim-icon-4"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 154 154"
+              style="enable-background: new 0 0 154 154"
+              xml:space="preserve"
+            >
+              <style type="text/css">
+                .st0 {
+                  clip-path: url(#SVGID_00000137850704425011892350000011982039090862029999_);
+                  fill: none;
+                  stroke: #00bdc3;
+                  stroke-width: 4;
+                  stroke-linejoin: round;
+                }
+                .st1 {
+                  clip-path: url(#SVGID_00000137850704425011892350000011982039090862029999_);
+                }
+                .st2 {
+                  fill: none;
+                  stroke: #00bdc3;
+                  stroke-width: 4;
+                  stroke-linejoin: round;
+                }
+                .st3 {
+                  fill: none;
+                  stroke: #00bdc3;
+                  stroke-width: 4;
+                  stroke-miterlimit: 10;
+                }
+
+                #cup.animate {
+                  webkit-animation: scale-up-center 1s
+                    cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+                  animation: scale-up-center 1s
+                    cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+                  transform-origin: center;
+                }
+
+                #cup.unanimate {
+                  webkit-animation: scale-up-center 0.5s
+                    cubic-bezier(0.39, 0.575, 0.565, 1) forwards reverse;
+                  animation: scale-up-center 0.5s
+                    cubic-bezier(0.39, 0.575, 0.565, 1) forwards reverse;
+                  transform-origin: center;
+                }
+
+                @-webkit-keyframes scale-up-center {
+                  0% {
+                    -webkit-transform: scale(0.5);
+                    transform: scale(0.5);
+                  }
+                  100% {
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                  }
+                }
+                @keyframes scale-up-center {
+                  0% {
+                    -webkit-transform: scale(0.5);
+                    transform: scale(0.5);
+                  }
+                  100% {
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                  }
+                }
+              </style>
+              <g id="cup">
+                <defs>
+                  <rect id="SVGID_1_" width="154" height="154" />
+                </defs>
+                <clipPath
+                  id="SVGID_00000155837632842797996770000001594423346842041222_"
+                >
+                  <use xlink:href="#SVGID_1_" style="overflow: visible" />
+                </clipPath>
+
+                <path
+                  id="Path_57222"
+                  style="
+                    clip-path: url(#SVGID_00000155837632842797996770000001594423346842041222_);
+                    fill: none;
+                    stroke: #00bdc3;
+                    stroke-width: 4;
+                    stroke-linejoin: round;
+                  "
+                  d="
+		M63.8,60.9l8.8-0.8l4.1-7.2l3.8,7.2l8.3,0.8l-5.9,5.8l1.3,8.1l-7.6-4l-8.1,4l1.9-8.1L63.8,60.9z"
+                />
+                <g
+                  id="Group_43159"
+                  style="
+                    clip-path: url(#SVGID_00000155837632842797996770000001594423346842041222_);
+                  "
+                >
+                  <path
+                    id="Path_57223"
+                    class="st2"
+                    d="M53.8,56.3c-0.4-8.9-14.9-11.9-14.9,1.2c0,19.3,26.3,23.8,26.3,23.8"
+                  />
+                  <path
+                    id="Path_57224"
+                    class="st2"
+                    d="M98.1,110.9c0.1-3.9,0.1-7.6-5.6-7.9c-9-0.4-15-12.3-4.8-20.8c13.1-10.8,13.4-28.8,12.7-39.1
+			H53.6c-0.7,10.3-0.4,28.3,12.7,39.1c10.3,8.5,4.2,20.4-4.8,20.8c-5.7,0.3-5.7,4-5.6,7.9H98.1z"
+                  />
+                  <path
+                    id="Path_57225"
+                    class="st2"
+                    d="M100.2,56.3c0.4-8.9,14.9-11.9,14.9,1.2c0,19.3-26.3,23.8-26.3,23.8"
+                  />
+                </g>
+              </g>
+              <circle id="Ellipse_89" class="st3" cx="77" cy="77" r="75" />
+            </svg>
+
+            <!-- <img
               class="anim-icon-4"
               src="./assets/img/members/anim-icon-4.svg"
               alt=""
-            />
+            /> -->
             <p>Challenges to keep you motivated during your fitness journey</p>
             <!-- </div> -->
             <!-- /.mob-single -->
@@ -1103,11 +1497,253 @@
 
           <!-- <div class="col-md-4 col-10"> -->
           <div class="mob-single">
-            <img
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              id="anim-icon-5"
+              data-name="Group 43156"
+              width="150"
+              height="150"
+              viewBox="0 0 150 150"
+            >
+              <defs>
+                <clipPath id="clip-path">
+                  <rect
+                    id="Rectangle_18881"
+                    data-name="Rectangle 18881"
+                    width="150"
+                    height="150"
+                    fill="none"
+                  />
+                </clipPath>
+
+                <style>
+                  #arrow-line-1,
+                  #arrow-line-2,
+                  #stats-line-1.animate,
+                  #stats-line-2.animate,
+                  #stats-line-3.animate,
+                  #stats-line-4.animate,
+                  #stats-line-5.animate,
+                  #stats-line-6.animate {
+                    stroke-dasharray: 500;
+                  }
+
+                  #arrow-line-1,
+                  #arrow-line-2,
+                  #stats-line-1.unanimate,
+                  #stats-line-2.unanimate,
+                  #stats-line-3.unanimate,
+                  #stats-line-4.unanimate,
+                  #stats-line-5.unanimate,
+                  #stats-line-6.unanimate {
+                    stroke-dasharray: 500;
+                  }
+
+                  #arrow-line-1.animate,
+                  #arrow-line-2.animate,
+                  #stats-line-1.animate,
+                  #stats-line-2.animate,
+                  #stats-line-3.animate,
+                  #stats-line-4.animate,
+                  #stats-line-5.animate,
+                  #stats-line-6.animate {
+                    stroke-dashoffset: 0;
+                    animation: dash-3 5s linear forwards;
+                  }
+
+                  #arrow-line-1.unanimate,
+                  #arrow-line-2.unanimate,
+                  #stats-line-1.unanimate,
+                  #stats-line-2.unanimate,
+                  #stats-line-3.unanimate,
+                  #stats-line-4.unanimate,
+                  #stats-line-5.unanimate,
+                  #stats-line-6.unanimate {
+                    stroke-dashoffset: 0;
+                    animation: dash-3 5s linear forwards reverse;
+                  }
+
+                  #stats-line-1.animate,
+                  #stats-line-2.animate,
+                  #stats-line-3.animate,
+                  #stats-line-4.animate,
+                  #stats-line-5.animate,
+                  #stats-line-6.animate {
+                    stroke-dashoffset: 500;
+                    animation: dash-4 1.5s linear forwards;
+                  }
+
+                  #stats-line-1.unanimate,
+                  #stats-line-2.unanimate,
+                  #stats-line-3.unanimate,
+                  #stats-line-4.unanimate,
+                  #stats-line-5.unanimate,
+                  #stats-line-6.unanimate {
+                    stroke-dashoffset: 500;
+                    animation: dash-4 1.5s linear forwards reverse;
+                  }
+
+                  #stats-line-2.animate,
+                  #stats-line-2.unanimate {
+                    animation-delay: 0.125s;
+                  }
+
+                  #stats-line-3.animate,
+                  #stats-line-3.unanimate {
+                    animation-delay: 0.375s;
+                  }
+
+                  #stats-line-4.animate,
+                  #stats-line-4.unanimate {
+                    animation-delay: 0.5s;
+                  }
+
+                  #stats-line-5.animate,
+                  #stats-line-5.unanimate {
+                    animation-delay: 0.625s;
+                  }
+
+                  #stats-line-6.animate,
+                  #stats-line-6.unanimate {
+                    animation-delay: 0.75s;
+                  }
+
+                  @keyframes dash-3 {
+                    from {
+                      stroke-dashoffset: 500;
+                    }
+
+                    to {
+                      stroke-dashoffset: 0;
+                    }
+                  }
+
+                  @keyframes dash-4 {
+                    from {
+                      stroke-dashoffset: -500;
+                    }
+
+                    to {
+                      stroke-dashoffset: 0;
+                    }
+                  }
+
+                  @keyframes line-grow {
+                    from {
+                      transform: scale(0);
+                    }
+
+                    to {
+                      transform: scale(1);
+                    }
+                  }
+                </style>
+              </defs>
+              <g
+                id="Group_43155"
+                data-name="Group 43155"
+                clip-path="url(#clip-path)"
+              >
+                <circle
+                  id="Ellipse_87"
+                  data-name="Ellipse 87"
+                  cx="73.412"
+                  cy="73.412"
+                  r="73.412"
+                  transform="translate(1.588 1.588)"
+                  fill="none"
+                  stroke="#00bdc3"
+                  stroke-miterlimit="10"
+                  stroke-width="4"
+                />
+                <path
+                  id="arrow-line-1"
+                  data-name="Path 57216"
+                  d="M49.9,81.693,62.079,69.51,76.956,84.387l38.569-38.569"
+                  transform="translate(-10.272 -9.432)"
+                  fill="none"
+                  stroke="#00bdc3"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                />
+                <path
+                  id="arrow-line-2"
+                  data-name="Path 57217"
+                  d="M117.851,45.818h11.663V57.481"
+                  transform="translate(-24.261 -9.432)"
+                  fill="none"
+                  stroke="#00bdc3"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                />
+                <line
+                  id="stats-line-1"
+                  data-name="Line 5120"
+                  y2="23.933"
+                  transform="translate(42.956 83.44)"
+                  fill="none"
+                  stroke="#00bdc3"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                />
+                <line
+                  id="stats-line-2"
+                  data-name="Line 5121"
+                  y2="33.562"
+                  transform="translate(54.249 73.812)"
+                  fill="none"
+                  stroke="#00bdc3"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                />
+                <line
+                  id="stats-line-3"
+                  data-name="Line 5122"
+                  y2="23.933"
+                  transform="translate(65.542 83.44)"
+                  fill="none"
+                  stroke="#00bdc3"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                />
+                <line
+                  id="stats-line-4"
+                  data-name="Line 5123"
+                  y2="30.559"
+                  transform="translate(76.835 76.814)"
+                  fill="none"
+                  stroke="#00bdc3"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                />
+                <line
+                  id="stats-line-5"
+                  data-name="Line 5124"
+                  y2="38.823"
+                  transform="translate(88.128 68.55)"
+                  fill="none"
+                  stroke="#00bdc3"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                />
+                <line
+                  id="stats-line-6"
+                  data-name="Line 5125"
+                  y2="49.767"
+                  transform="translate(99.421 57.606)"
+                  fill="none"
+                  stroke="#00bdc3"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                />
+              </g>
+            </svg>
+            <!-- <img
               class="anim-icon-5"
               src="./assets/img/members/anim-icon-5.svg"
               alt=""
-            />
+            /> -->
             <p>Workout statistics to visualize your progress over time</p>
           </div>
           <!-- /.mob-single -->

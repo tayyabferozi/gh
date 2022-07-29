@@ -5,7 +5,7 @@ let scrollDir = "down";
 (function () {
   window.onload = function () {
     setTimeout(function () {
-      window.scrollTo(0, 20672);
+      // window.scrollTo(0, 18663);
     }, 1500);
     // window.setTimeout(fadeout, 0);
 
@@ -222,10 +222,8 @@ let scrollDir = "down";
     if (scrolledAfterEl > 0 && scrolledAfterEl < usableHeight) {
       const currStep = Math.ceil(scrolledAfterEl / (usableHeight / stepsCount));
 
-      console.log(currStep, window["currStepNum"]);
-      if (currStep !== window["currStepNum"]) {
-        window["currStepNum"] = currStep;
-        console.log(currStep, window["currStepNum"]);
+      if (currStep !== window[currStepNum]) {
+        window[currStepNum] = currStep;
 
         animFunc(currStep);
       }
@@ -248,8 +246,8 @@ let scrollDir = "down";
 
   const wrapScrollEl2 = document.querySelector(".members");
   const mainScrollEl2 = document.querySelector(".members > .container");
-  const stepsCount2 = 6;
-  let currStepNum2 = 1;
+  const stepsCount2 = 5;
+  let currStepNum2 = 0;
 
   function scrollFunc2() {
     const vh = Math.max(
@@ -270,31 +268,143 @@ let scrollDir = "down";
     const manageMemElHeight = manageMemEl.getBoundingClientRect().height;
     const allMobEls = manageMemEl.querySelectorAll(".manage-mem > .mob-single");
 
+    document.querySelectorAll("svg .animate").forEach((el) => {
+      el.classList.remove("animate");
+    });
+
+    document.querySelectorAll("svg .unanimate").forEach((el) => {
+      el.classList.remove("unanimate");
+    });
+
     if (allMobEls) {
       allMobEls.forEach((el, idx) => {
         const elHeight = el.getBoundingClientRect().height;
 
         const animIcon1 = el.querySelector("#anim-icon-1 #biceps");
+        const animIcon2_1 = el.querySelector("#anim-icon-2 #center-circle");
+        const animIcon2_2 = el.querySelector("#anim-icon-2 #circle-checkmark");
+        const animIcon3 = el.querySelector("#anim-icon-3 #curly-lines");
+        const animIcon4 = el.querySelector("#anim-icon-4 #cup");
+        const animIcon5_1 = el.querySelector("#anim-icon-5 #arrow-line-1");
+        const animIcon5_2 = el.querySelector("#anim-icon-5 #arrow-line-2");
+        const animIcon5_3 = el.querySelector("#anim-icon-5 #stats-line-1");
+        const animIcon5_4 = el.querySelector("#anim-icon-5 #stats-line-2");
+        const animIcon5_5 = el.querySelector("#anim-icon-5 #stats-line-3");
+        const animIcon5_6 = el.querySelector("#anim-icon-5 #stats-line-4");
+        const animIcon5_7 = el.querySelector("#anim-icon-5 #stats-line-5");
+        const animIcon5_8 = el.querySelector("#anim-icon-5 #stats-line-6");
 
-        if (animIcon1) {
-          console.log(animIcon1);
-          // gsap.to(animIcon1, { "stroke-dashoffset": 0, fill: "black" });
-          gsap.fromTo
-            animIcon1,
-            // 5,
-            { attr: { "stroke-dashoffset": 1 } },
-            { attr: { "stroke-dashoffset": 0 } }
-          );
-          // gsap.from(animIcon1, {
-          //   duration: 5,
-          //   drawSVG: 0,
-          //   repeat: -1,
-          //   yoyo: true,
-          // });
+        function removeAnimateAccordingly() {
+          if (animIcon1) {
+            animIcon1.classList.remove("animate");
+            animIcon1.classList.add("unanimate");
+          }
+
+          if (animIcon2_1) {
+            animIcon2_1.classList.remove("animate");
+            animIcon2_2.classList.remove("animate");
+
+            animIcon2_1.classList.add("unanimate");
+            animIcon2_2.classList.add("unanimate");
+          }
+
+          if (animIcon3) {
+            animIcon3.classList.remove("animate");
+
+            animIcon3.classList.add("unanimate");
+          }
+
+          if (animIcon4) {
+            animIcon4.classList.remove("animate");
+
+            animIcon4.classList.add("unanimate");
+          }
+
+          if (animIcon5_1) {
+            animIcon5_1.classList.remove("animate");
+            animIcon5_2.classList.remove("animate");
+            animIcon5_3.classList.remove("animate");
+            animIcon5_4.classList.remove("animate");
+            animIcon5_5.classList.remove("animate");
+            animIcon5_6.classList.remove("animate");
+            animIcon5_7.classList.remove("animate");
+            animIcon5_8.classList.remove("animate");
+
+            animIcon5_1.classList.remove("unanimate");
+            animIcon5_2.classList.remove("unanimate");
+            animIcon5_3.classList.remove("unanimate");
+            animIcon5_4.classList.remove("unanimate");
+            animIcon5_5.classList.remove("unanimate");
+            animIcon5_6.classList.remove("unanimate");
+            animIcon5_7.classList.remove("unanimate");
+            animIcon5_8.classList.remove("unanimate");
+          }
+        }
+
+        function animateAccordingly() {
+          if (animIcon1) {
+            animIcon1.classList.remove("unanimate");
+
+            setTimeout(function () {
+              animIcon1.classList.add("animate");
+            }, 10);
+          }
+
+          if (animIcon2_1) {
+            animIcon2_1.classList.remove("unanimate");
+            animIcon2_1.classList.remove("unanimate");
+
+            setTimeout(function () {
+              animIcon2_1.classList.add("animate");
+              animIcon2_2.classList.add("animate");
+            }, 10);
+          }
+
+          if (animIcon3) {
+            animIcon3.classList.remove("unanimate");
+
+            setTimeout(function () {
+              animIcon3.classList.add("animate");
+            }, 10);
+          }
+
+          if (animIcon4) {
+            animIcon4.classList.remove("unanimate");
+
+            setTimeout(function () {
+              animIcon4.classList.add("animate");
+            }, 10);
+          }
+
+          if (animIcon5_1) {
+            animIcon5_1.classList.remove("unanimate");
+            animIcon5_2.classList.remove("unanimate");
+            animIcon5_3.classList.remove("unanimate");
+            animIcon5_4.classList.remove("unanimate");
+            animIcon5_5.classList.remove("unanimate");
+            animIcon5_6.classList.remove("unanimate");
+            animIcon5_7.classList.remove("unanimate");
+            animIcon5_8.classList.remove("unanimate");
+
+            setTimeout(function () {
+              animIcon5_1.classList.add("animate");
+              animIcon5_2.classList.add("animate");
+              animIcon5_3.classList.add("animate");
+              animIcon5_4.classList.add("animate");
+              animIcon5_5.classList.add("animate");
+              animIcon5_6.classList.add("animate");
+              animIcon5_7.classList.add("animate");
+              animIcon5_8.classList.add("animate");
+            }, 10);
+          }
         }
 
         if (scrollDir === "up") {
           if (el.classList.contains("animated")) {
+            // ------------- IF USER IS SCROLLING DOWN (OTHER STEPS) ------------
+
+            removeAnimateAccordingly();
+
             el.classList.remove("animated");
             gsap
               .fromTo(
@@ -302,9 +412,13 @@ let scrollDir = "down";
                 { top: manageMemElHeight / 2 - elHeight / 2, opacity: 1 },
                 { top: -(manageMemElHeight / 2), opacity: 0 }
               )
-              .duration(1.5);
+              .duration(2.5);
           }
-          if (idx === step - 2) {
+          if (idx === step - 1) {
+            // ------------- IF USER IS SCROLLING DOWN (CURRENT STEP) ------------
+
+            animateAccordingly();
+
             el.classList.add("animated");
             gsap
               .fromTo(
@@ -312,10 +426,14 @@ let scrollDir = "down";
                 { top: manageMemElHeight, opacity: 0 },
                 { top: manageMemElHeight / 2 - elHeight / 2, opacity: 1 }
               )
-              .duration(1.5);
+              .duration(2.5);
           }
         } else {
           if (el.classList.contains("animated")) {
+            // ------------- IF USER IS SCROLLING UP (OTHER STEPS) ------------
+
+            removeAnimateAccordingly();
+
             el.classList.remove("animated");
             gsap
               .fromTo(
@@ -323,9 +441,12 @@ let scrollDir = "down";
                 { top: manageMemElHeight / 2 - elHeight / 2, opacity: 1 },
                 { top: manageMemElHeight, opacity: 0 }
               )
-              .duration(1.5);
+              .duration(2.5);
           }
-          if (idx === step - 2) {
+          if (idx === step - 1) {
+            // ------------- IF USER IS SCROLLING UP (CURRENT STEP) ------------
+
+            animateAccordingly();
             el.classList.add("animated");
             gsap
               .fromTo(
@@ -333,36 +454,9 @@ let scrollDir = "down";
                 { top: -(manageMemElHeight / 2), opacity: 0 },
                 { top: manageMemElHeight / 2 - elHeight / 2, opacity: 1 }
               )
-              .duration(1.5);
+              .duration(2.5);
           }
         }
-        // if (scrollDir === "up") {
-        //   if (el.classList.contains("enter")) {
-        //     el.classList.remove("enter");
-        //     el.classList.add("exit");
-        //   }
-        //   if (idx === step - 2) {
-        //     if (el.classList.contains("exit")) {
-        //       el.classList.remove("exit");
-        //       el.classList.add("enter");
-        //     } else {
-        //       el.classList.add("enter");
-        //     }
-        //   }
-        // } else {
-        //   if (el.classList.contains("enter2")) {
-        //     el.classList.remove("enter2");
-        //     el.classList.add("exit2");
-        //   }
-        //   if (idx === step - 2) {
-        //     if (el.classList.contains("exit2")) {
-        //       el.classList.remove("exit2");
-        //       el.classList.add("enter2");
-        //     } else {
-        //       el.classList.add("enter2");
-        //     }
-        //   }
-        // }
       });
     }
   }
